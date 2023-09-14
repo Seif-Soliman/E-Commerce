@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style2.css" type="text/css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="title">
+               <img src="assets\SVG\Logo.svg" alt="">
+            </div>
+            <div class="search">
+                <img class="menu" src="assets\SVG\Sort.svg" alt="">
+                <form method="get" action="/search">
+                    <select name="Cat" id="Cat" class="cat" >
+                        <optgroup label="Category 1">
+                            <option value="">Category 1</option>
+                            <option value="">2</option>
+                          </optgroup>
+                          <optgroup label="Category 1">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                          </optgroup>
+                    </select>
+                    <input type="search" placeholder="Search anything">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+            <div class="help_btn">
+                <button class="button">Help</button>
+            </div>
+            <div class="account">
+                <img class="user" src="assets\SVG\User.svg" alt="">
+                <p class="text">
+                    Account
+                </p>
+            </div>
+            <div class="shop">
+                <img class="bag" src="assets\SVG\Bag_alt.svg" alt="">
+                <p class="notification">16</p>
+                <p class="text">
+                    Shopping
+                </p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Jewelry & Accessories</a></li>
+                <li><a href="/">Clothing & Shoes</a></li>
+                <li><a href="/">Home & Living</a></li>
+                <li>
+                    <a class="active" href="/">Wedding & Party</a>
+                    <hr>
+                </li>
+                <li><a href="/">Toys & Entertainment</a></li>
+                <li><a href="/">Art & Collectibles</a></li>
+                <li><a href="/">Craft Supplies & Tools</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="splash" >
+        
+            <div class="row">
+
+                <div class="cat-cards">
+                    <div> 
+                        <img src="assets\cat\shoe.png" alt="shoe"/>
+                        <p class="text-overlay">
+                            Clothing & Shoes
+                        </p>
+                    </div>
+                    <div> 
+                        <img src="assets\cat\living.png" alt="living"/>
+                        <p class="text-overlay">
+                            Home & Living
+                        </p>
+                     </div>
+                    <div> 
+                        <img src="assets\cat\art.png" alt="art"/>
+                        <p class="text-overlay">
+                            Art & Collectibles
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="prod-cards">
+                    <div class="prod_card1">
+                        <p class="fav">
+                            <img src="assets\SVG\Favorite.svg" alt="">
+                        </p>
+                        <img src="assets\prods1\prod1.png" alt="">
+                        <p>Colors</p>
+                        <span class="green"></span>
+                        <span class="lightblue"></span>
+                        <span class="lightgreen"></span>
+                        <span class="blue"></span>
+                        <span class="red"></span>
+                        <span class="purple"></span>
+                        <span class="orange"></span>
+                        <p>Vonna Neva Walnut Sandalye Chair</p>
+                        <p class="text">195,13 $</p>
+                    </div>
+                    <div class="prod_card2">
+                        <p class="fav">
+                            <img src="assets\SVG\Favorite.svg" alt="">
+                        </p>
+                        <img src="assets\prods1\prod2.png" alt="">
+                        <p>Colors</p>
+                        <span class="green"></span>
+                        <span class="lightblue"></span>
+                        <span class="red"></span>
+                        <span class="purple"></span>
+                        <span class="orange"></span>
+                        <p>Vonna Neva Walnut Sandalye Chair</p>
+                        <p class="text">195,13 $</p>
+                    </div>
+                    <div class="prod_card3">
+                        <p class="fav">
+                            <img src="assets\SVG\Favorite.svg" alt="">
+                        </p>
+                        <img src="assets\prods1\prod3.png" alt="">
+                        <p>Colors</p>
+                        <span class="blue"></span>
+                        <span class="red"></span>
+                        <span class="purple"></span>
+                        <p>Vonna Neva Walnut Sandalye Chair</p>
+                        <p class="text">195,13 $</p>
+                    </div>
+                    <div class="prod_card4">
+                        <p class="fav">
+                            <img src="assets\SVG\Favorite.svg" alt="">
+                        </p>
+                        <img src="assets\prods1\prod4.png" alt="">
+                        <p>Colors</p>
+                        <span class="green"></span>
+                        <span class="lightgreen"></span>
+                        <span class="red"></span>
+                        <span class="purple"></span>
+                        <span class="orange"></span>
+                        <p>Vonna Neva Walnut Sandalye Chair</p>
+                        <p class="text">195,13 $</p>
+                    </div>
+                </div>
+                           
+            </div>
+
+            <div class="dot-container">
+                        <p class="dot"></p>
+                        <p class="dot-active"></p>
+                        <p class="dot"></p>
+                        <p class="dot"></p>
+            </div>
+
+        </div>
+
+     
+
+       <div class="norm-cards">
+            <div>
+                <div class="data">
+                    <p class="heading">A community doing good</p>
+                    <p class="text">Commerce is a global online marketplace, where people.</p>
+                </div>
+                <div>
+                    <img src="assets\SVG\1.svg" alt=""/>
+                </div>
+            </div>
+            <div>
+                <div class="data">
+                    <p class="heading">Support independent creators</p>
+                    <p class="text">Just millions of people selling the things they love.</p>
+                </div>
+                <div>
+                    <img src="assets\SVG\2.svg" alt=""/>
+                </div>
+            </div>
+            <div>
+                <div class="data">
+                    <p class="heading">Peace of mind</p>
+                    <p class="text">Privacy is the highest priority of our dedicated team.</p>
+                </div>
+                <div>
+                    <img src="assets\SVG\3.svg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="dot-container">
+            <p class="dot"></p>
+            <p class="dot-active"></p>
+            <p class="dot"></p>
+        </div>
+
+        <p class="subheading">Find things you'll love.</p>
+        <p class="subheading">Support independent sellers.</p>
+        <p class="description">Only on polka.</p>
+   
+  
+        
+        <img class="left-btn" src="assets\SVG\Expand_left_light.svg" alt="">
+        <img class="right-btn" src="assets\SVG\Expand_right_light.svg" alt="">
+
+        <div class="prod-list">
+            <div>
+                <img src="assets\prods\prodlist1.png" alt="">
+                <p>Craft Kits</p>
+            </div>
+            <div>
+                <img src="assets\prods\prodlist2.png" alt="">
+                <p>Throw Pillows</p>
+            </div>
+            <div>
+                <img src="assets\prods\prodlist3.png" alt="">
+                <p>Natural Glass</p>
+            </div>
+            <div>
+                <img src="assets\prods\prodlist4.png" alt="">
+                <p>Self-care</p>
+            </div>
+            <div>
+                <img src="assets\prods\prodlist5.png" alt="">
+                <p>Gift Ideas</p>
+            </div>
+            <div>
+                <img src="assets\prods\prodlist6.png" alt="">
+                <p>Wall Decor</p>
+            </div>
+            <div>
+                <img src="assets\prods\prodlist7.png" alt="">
+                <p>Wedding</p>
+            </div>
+            <div>
+                <img src="assets\prods\prodlist8.png" alt="">
+                <p>Life Style</p>
+            </div>
+        </div>
+
+        <div class="dot-container">
+            <p class="dot"></p>
+            <p class="dot-active"></p>
+            <p class="dot"></p>
+        </div>
+        <p class="subheading">Discover unique hand-picked items</p>
+
+        <img class="left-btn-prod" src="assets\SVG\Expand_left_light.svg" alt="">
+        <img class="right-btn-prod" src="assets\SVG\Expand_right_light.svg" alt="">
+
+ 
+        <div class="prod-cards2">
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod1.png" alt="">
+                <p>Distressed Tote Leather Bag Leather Bag</p>
+                <p>216,27 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod2.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod3.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod4.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod5.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod6.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+        </div>
+
+        <div class="dot-container">
+            <p class="dot"></p>
+            <p class="dot-active"></p>
+            <p class="dot"></p>
+        </div>
+       
+        <div class="nav2">
+            <div>
+                <p>Modern Farmhouse</p>
+                <hr>
+            </div>
+            <div>
+                <p>Eclectic 
+                    Decor</p>
+                    <hr>
+            </div>
+            <div>
+                <p>Polka Boho 
+                    Decor</p>
+                    <hr>
+            </div>
+            <div class="nav2-active">
+                <p>Minimalist
+                    Style</p>
+                    <hr>
+            </div>
+            <div>
+                <p>Anniversary
+                    Gift</p>
+                    <hr>
+            </div>
+            <div>
+                <p>Wedding
+                    Gifts</p>
+                    <hr>
+            </div>
+        </div>
+
+        <div class="prod-cards3">
+            <div class="img">
+                <img src="assets\prods3\shoe2.png" alt="">
+            </div>
+            <div class="prod_card6">
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods3\prod1.png" alt="">
+                <p>Colors</p>
+                <span class="green"></span>
+                <span class="lightblue"></span>
+                <span class="lightgreen"></span>
+                <span class="blue"></span>
+                <span class="red"></span>
+                <span class="purple"></span>
+                <span class="orange"></span>
+                <p>Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div class="prod_card7">
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods3\prod2.png" alt="">
+                <p>Colors</p>
+                <span class="green"></span>
+                <span class="blue"></span>
+                <span class="red"></span>
+                <span class="purple"></span>
+                <span class="orange"></span>
+                <p>Iphone 12 128 GB (Red) Apple</p>
+                <p>458,43 $</p>
+            </div>
+            <div class="prod_card8">
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods3\prod3.png" alt="">
+                <p>Colors</p>
+                <span class="blue"></span>
+                <span class="red"></span>
+                <span class="purple"></span>
+                <p>Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair</p>
+                <p>789,67 $</p>
+            </div>
+        </div>
+
+        <div class="prod-cards2">
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod1.png" alt="">
+                <p>Distressed Tote Leather Bag Leather Bag</p>
+                <p>216,27 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod2.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod3.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod4.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod5.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+            <div>
+                <p class="fav">
+                    <img src="assets\SVG\Favorite.svg" alt="">
+                </p>
+                <img src="assets\prods2\prod6.png" alt="">
+                <p>Vonna Neva Walnut Sandalye Chair</p>
+                <p>195,13 $</p>
+            </div>
+        </div>
+
+        <div class="dot-container">
+            <p class="dot"></p>
+            <p class="dot-active"></p>
+            <p class="dot"></p>
+        </div>
+
+        <div class="newsletter">
+            <p class="yes">Yes!</p>
+            <p>Send me exclusive offers, unique gift ideas, and personalized tips for shopping and selling on Commerce.</p>
+            <form class="mail" method="post" enctype="application/x-www-form-urlencoded">
+                <input type="email" class="email" placeholder="Drop your Email"> 
+            </form>
+            <form class="btn" action="">
+                <input type="submit" class="button" value="Subscirbe">
+                <img class="right-arrow" src="Arrow_right.svg" alt="">
+            </form>
+            <p class="label">First order only. You’re ready?</p>
+        </div>
+    
+
+        <div class="footnote">
+            <p>Commerce, is powered by 100% renewable electricity.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <br/>
+        <div class="foot-container">
+            <div class="col1">
+                <div class="media">
+                    <img src="assets\SVG\Logo.svg" class="logo" alt="">
+                    <p>Cricklewood,London NW2 6qg, Uk</p>
+                    <img class="face" src="assets\social-media\facebook.png" class="social" alt="">
+                    <img src="assets\social-media\twitter.png" class="social" alt="">
+                    <img src="assets\social-media\linkedin.png" class="social" alt="">
+                    <img src="assets\social-media\dribbble.png" class="social" alt="">
+                </div>
+            </div>
+            <div class="col2">
+                <div>
+                    <p class="head">
+                        Shop
+                        <img class="down-btn" src="Expand_down_white.svg" alt="">
+                    </p>
+                    <p class="info">Gift Cards</p>
+                    <p class="info">Site map</p>
+                    <p class="info">Polka blog</p>
+                    <p class="info">Login</p>
+                    <p class="info">Sign in</p>
+                </div>
+                <div>
+                    <p class="head">
+                        Sell
+                        <img class="down-btn" src="Expand_down_white.svg" alt="">
+                    </p>
+                    <p class="info">Sell on Polka</p>
+                    <p class="info">Teams</p>
+                    <p class="info">Forums</p>
+                    <p class="info">Affiliates</p>
+                </div>
+                <div class="active">
+                    <p class="head-active">
+                        About
+                        <img class="down-btn-active" src="assets\SVG\Expand_down_white.svg" alt="">
+                    </p>
+                    <p class="info-active">Polka, Inc.</p>
+                    <hr>
+                    <p class="info-active">Policies</p>
+                    <hr>
+                    <p class="info-active">Investors</p>
+                    <hr>
+                    <p class="info-active">Careers</p>
+                    <hr>
+                    <p class="info-active">Press</p>
+                </div>
+                <div>
+                    <p class="head">
+                        Help
+                        <img class="down-btn" src="assets\SVG\Expand_down_white.svg" alt="">
+                    </p>
+                    <p class="info">Help Center</p>
+                    <p class="info">Trust and safety</p>
+                    <p class="info">Privacy settings</p>
+                </div>
+            </div>
+                
+        </div>
+
+        <div class="foot2">
+            <div class="name">
+                <p>&copy; 2022 Commerce, Inc.</p>
+            </div>
+            <div class="page-info">
+                <p>Privacy policy</p>
+                <p class="active">Terms of use</p>
+                <p>Cookies</p>
+            </div>
+            <div class="scroll">
+                <p>Scroll to top</p>
+                <img class="up-arrow" src="assets\SVG\Arrow_right.svg" alt="">
+            </div>
+        </div>
+    </footer> 
+
+</body>
+</html>

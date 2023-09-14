@@ -1,0 +1,2055 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0 auto;
+    font-family: 'Poppins';
+}
+
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.left-btn-prod, .right-btn-prod{
+    display: none;
+}
+
+/*
+--------------------
+--------------------
+        NAV
+--------------------
+--------------------
+*/
+
+nav > ul{
+    display: none;
+}
+
+header{
+    background-color: #FFF9F3;
+}
+
+header > div{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 26.6rem;
+}
+
+header > div > .help_btn, header > div > div > .text{
+    display: none;
+}
+
+header > div > div:nth-child(1),  header > div > div:nth-child(4),  header > div > div:nth-child(5), header > div > div:nth-child(3){
+    order: 1;
+}
+
+header > div > div:nth-child(2){
+    order: 2;
+}
+
+header > div > .title > img{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-right: -1.9rem;
+}
+
+header > div > .account > img, header > div > .shop > img{
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+}
+
+header > div > .shop{
+    position: relative;
+}
+
+header .notification{
+    background-color: #EB6D20;
+    color: white;
+    border: 2.5px solid #EB6D20;
+    border-radius: 50%;
+    position: absolute;
+    top: 28%;
+    right: 2%;
+    text-align: center;
+    width: 40%;
+}
+
+header > div > .search > form > select{
+    display: none;
+}
+
+header > div > .search > form{
+    height: auto;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 1.6875rem;
+    border: 4px solid white;
+    padding: 5px;
+    width: 14.8125rem;
+    margin-left: 3.875rem;
+}
+
+header > div > .search > form > input{
+    width: 12rem;
+    height: 27.5px;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    position: inherit;
+}
+
+header > div > .search{
+    width: 20rem;
+    margin-bottom: 1.5rem;
+}
+
+header > div > .search > img{
+    float: left;
+    background-color: white;
+    border: 0.5rem solid white;
+    border-radius: 50%;
+    margin-left: 0.6875rem;
+    display: inline;
+}
+
+
+/*
+--------------------
+--------------------
+    CAT-CARDS
+--------------------
+--------------------
+*/
+
+.cat-cards{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cat-cards > div > img{
+    width: 100%;
+    height: 11.25rem;
+}
+
+.cat-cards > div{
+    max-width: 26.6rem;
+    position: relative;
+    text-align: center;
+}
+
+.cat-cards > div > p{
+    position: absolute;
+}
+
+.text-overlay{
+    color: white;
+    top: 9rem;
+    left: 1rem;
+}
+
+/*
+--------------------
+--------------------
+    PROD-CARDS
+--------------------
+--------------------
+*/
+
+.prod-cards{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1.5rem;
+}
+
+.prod-cards > div{
+    max-width: 26.6rem;
+    width: 17.8rem;
+    height: auto;
+    position: relative;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.prod-cards > div >.fav{
+    position: absolute;
+    left: 74.5%;
+    top: 3.5%;
+    background-color: white;
+    border: 9px solid white;
+    height: 4%;
+    border-radius: 2.5rem;
+}
+
+.prod-cards > div > img{
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    width: 13rem;
+    height: 13rem;
+}
+
+.prod-cards > div >.text{
+    padding-right: 80px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.prod-cards > div > p{
+    margin-left: 1.5rem;
+}
+
+.green{
+    margin-top: 0.75rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: 16px;
+    width: 16px;
+    background-color: #7CB93E;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.lightblue{
+    margin-top: 0.75rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 16px;
+    width: 16px;
+    background-color: #33ABC6;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.lightgreen{
+    margin-top: 0.75rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 16px;
+    width: 16px;
+    background-color: #1CCD8D;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.blue{
+    margin-top: 0.75rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 16px;
+    width: 16px;
+    background-color: #3F65EA;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red{
+    margin-top: 0.75rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 16px;
+    width: 16px;
+    background-color: #F64A69;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.purple{
+    margin-top: 0.75rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 16px;
+    width: 16px;
+    background-color: #A635EC;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.orange{
+    margin-top: 0.75rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 16px;
+    width: 16px;
+    background-color: #F9A85D;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.prod-cards > .prod_card1{
+    background-color: #D3FBD9;
+    border-radius: 5px;
+}
+
+.prod-cards > .prod_card2{
+    border-radius: 5px;
+    background: #FFE4BD;
+}
+
+.prod-cards > .prod_card3{
+    border-radius: 5px;
+    background: #D9ABFD;
+}
+
+.prod-cards > .prod_card4{
+    border-radius: 5px;
+    background: #FDF0AB;
+}
+
+
+/*
+--------------------
+--------------------
+    DOTS
+--------------------
+--------------------
+*/
+
+.dot-container{
+    text-align: center;
+    margin-top: 3.5%;
+    margin-bottom: 1.5%;
+    
+}
+
+.dot-container > p{
+    display: inline-block;
+    border-radius: 2.5rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 2.5px;
+    margin: 2.5px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+.dot-container > .dot{
+    fill: var(--base-gray-background, #F5F6F8);
+    stroke-width: 1px;
+    stroke: var(--base-border, #E9E9E9);
+}
+
+.dot-container > .dot-active{
+    display: inline-block;
+    border: 5px solid #EB6D20;
+    border-radius: 50%;
+    padding: 2.5px;
+    margin: 2.5px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+    background-color: #EB6D20;
+}
+
+
+/*
+--------------------
+--------------------
+    NORM-CARDS
+--------------------
+--------------------
+*/
+
+.norm-cards{
+    display: flex;
+    gap: 10%;
+    margin: 0 auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.norm-cards > div{
+    max-width: 26.6rem;
+    flex-direction: column-reverse;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 5px;
+    background-color: var(--base-gray-background, #F5F6F8);
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+/*NEEDS WORK FOR IMG*/
+.norm-cards > div > div > img{
+    display: block;
+    width: 7.5rem;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 5rem;
+    margin-left: 5rem; 
+}
+
+.data >.heading{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 4.9375rem;
+    margin-right: 4.9375rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.data >.text{
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+/*
+--------------------
+--------------------
+        TEXT
+--------------------
+--------------------
+*/
+
+.subheading{
+    color: var(--color-text-text, #3E3E3E);
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.description{
+    color: var(--color-text-subtext, #9A9A9A);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px; 
+    margin-left: 1rem;
+}
+
+/*
+--------------------
+--------------------
+     PROD-LIST
+--------------------
+--------------------
+*/
+
+.left-btn, .right-btn{
+    display: none;
+}
+
+.prod-list{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-left: .5rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.prod-list > div{
+    height: auto;
+    position: relative;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.prod-list > div > img{
+    border: 5px solid white;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.prod-list > div > p{
+    padding-top: 32px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+
+/*
+--------------------
+--------------------
+    PROD-CARDS2
+--------------------
+--------------------
+*/
+
+
+.prod-cards2{
+    display: flex;
+    width: 100%;
+    height: 19.125rem;
+    gap: 0.85rem;
+    justify-content: flex-start;
+    overflow-x: scroll; 
+    scroll-behavior: smooth;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.prod-cards2 > div{
+    margin-top: 1.5rem;
+    height: 18.125rem;
+    background: var(--main-white, #FFF);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 12.1875rem;
+}
+
+.prod-cards2 > div >img{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    width: 10.1875rem;
+    text-align: center;
+}
+
+.prod-cards2 > div >.fav{
+    position: absolute;
+    left: 70.5%;
+    top: 6.5%;
+    background-color: white;
+    border: 9px solid white;
+    height: 5%;
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+.prod-cards2 > div > p{
+    color: var(--color-text-text, #3E3E3E);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/*
+--------------------
+--------------------
+        NAV2
+--------------------
+Needs Checking
+--------------------
+*/
+
+.nav2 {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nav2 > div{
+    flex: 1;
+    width: 4rem;
+}
+
+.nav2 > .nav2-active > p{
+    color: #EB8426;
+}
+
+.nav2 > .nav2-active > hr{
+    border-color: #EB8426;
+}
+
+.nav2 > div > p{
+    color: var(--color-text-text, #3E3E3E);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 10%;
+}
+
+.nav2 > hr{
+    display: block;
+    width: 4rem;
+}
+
+
+/*
+--------------------
+--------------------
+    Prod-CARDS3
+--------------------
+--------------------
+*/
+
+.prod-cards3{
+    display: flex;
+    gap: 1rem;
+    justify-content:flex-start;
+    margin-top: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.prod-cards3 > div{
+    width: 13.1875rem;
+    height: auto;   
+    position: relative;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.prod-cards3 > div > p{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.prod-cards3 > div > .green{
+    margin-left: 1rem;
+}
+
+.prod-cards3 > div > img{
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 8rem;
+    height: auto;
+}
+
+.prod-cards3 > div >.fav{
+    position: absolute;
+    left: 72.5%;
+    top: 3.5%;
+    background-color: white;
+    border: 9px solid white;
+    height: 4%;
+    border-radius: 2.5rem;
+}
+
+.prod-cards3 > .img > img{
+    margin: 0;
+    margin-right: 0;
+    width: 13rem;
+    height: 100%;
+}
+
+.prod-cards3 > .prod_card6{
+    border-radius: 5px;
+    background: #FBF7D3;
+}
+
+.prod-cards3 > .prod_card7{
+    border-radius: 5px;
+    background: #FFBDBD;
+}
+
+.prod-cards3 > .prod_card8{
+    border-radius: 5px;
+    background: #C0ABFD;
+}
+
+/*
+--------------------
+--------------------
+    NEWSLETTER
+--------------------
+--------------------
+*/
+
+.newsletter{
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #5959D9;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    margin-top: 0px;
+    height: 20rem;
+    position: relative;
+    max-width: 26.6rem;
+}
+
+.newsletter > form{
+    padding-top: 1.5rem;
+    height: 3rem;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 27px;
+    border: 4px solid white;
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.newsletter > .mail > .email{
+    height: 27.5px;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+.newsletter > .btn{
+    background-color: #EB8426;
+    border-color: #EB8426;
+    margin-top: 0.5rem;
+    position: absolute;
+    top: 78%;
+    right: 6%;
+    height: 15.5%;
+}
+
+.newsletter > .btn > .button{
+    background-color: #EB8426;
+    color: white;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    padding-left: 0px;
+}
+
+.right-arrow{
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    width: 15%;
+}
+
+.newsletter > .yes{ 
+    padding-top: 1.5rem;
+}
+
+.newsletter > p{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+.newsletter > .label{
+    display: none;
+}
+
+
+/*
+--------------------
+--------------------
+    FOOTNOTE
+--------------------
+--------------------
+*/
+
+.footnote{
+    text-align: center;
+    margin-top: 5%;
+    background: var(--base-gray-background, #F5F6F8);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*
+--------------------
+--------------------
+      FOOTER
+--------------------
+--------------------
+*/
+
+
+.foot-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.foot-container > div >  .media > .logo, .foot-container > div >  .media > p{
+    display: none;
+}
+
+.foot-container > div > div:nth-child(2),  .foot-container > div > div:nth-child(4){
+    order: 2;
+}
+
+.foot-container > div > div:nth-child(1), .foot-container > div > div:nth-child(3){
+    order: 1s;
+}
+
+.foot-container > div >  .media{
+    background-color: #F5F6F8;
+    border-radius: 2rem;
+    width: 16.5rem;
+    text-align: center;
+    height: 2.5rem;
+    padding-left: 10px;
+}
+
+.foot-container > div > .media > img{
+    padding-top: 5px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.foot-container > .col1 > .media > .face{
+    margin-left: 0px
+}
+
+.foot-container >div{
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+
+.foot-container > .col2{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-container > .col2 > div{
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+.foot-container > .col2 > .active{
+    margin: 0 auto;
+    padding-bottom: 0%;
+}
+
+.head{
+    background-color: #F5F6F8;
+    border-radius: 2rem;
+    width: 16.5rem;
+    text-align: left;
+    height: 3rem;
+    line-height: 37px;
+    padding-left: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.head-active{
+    background-color: #EB8426;
+    color: white;
+    border-radius: 2rem;
+    width: 16.5rem;
+    text-align: left;
+    height: 3rem;
+    line-height: 37px;
+    padding-left: 10px;
+    align-items: center;
+    display: flex;
+}
+
+/*check*/
+.down-btn-active{
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.down-btn{
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    display: block;
+    filter: invert(100%);
+}
+
+.info{
+    display: none;
+}
+
+.info-active{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-bottom: 1rem;
+}
+
+.col2 > .active > hr{
+    width: 90%;
+    border-color: var(--base-border, #E9E9E9);
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+}
+
+
+/*
+--------------------
+--------------------
+      FOOT2
+--------------------
+--------------------
+*/
+
+.foot2{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.foot2 > .page-info, .foot2 > .scroll{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*For Tablet Views*/
+@media (min-width: 426px) and (max-width: 900px) {
+
+/*
+--------------------
+--------------------
+        DOT
+--------------------
+--------------------
+*/
+    .dot-container{
+    display: none;
+}
+
+
+/*
+--------------------
+--------------------
+        NAV
+--------------------
+--------------------
+*/
+
+header > div{
+    max-width: 56.25rem;
+    flex-wrap: wrap;
+}
+
+
+header > div > div:nth-child(1), header > div > div:nth-child(3), header > div > div:nth-child(4), header > div > div:nth-child(5){
+    order: 1;
+}
+
+header > div > div:nth-child(2){
+    order: 2;
+}
+
+header > div > .help_btn{
+    display: block;
+    margin-left: 35%;
+    margin-right: 1.5%;
+}
+
+header > div > .help_btn{
+    width: 5.5rem;
+    text-decoration: none;
+    background-color: #EB6D20;
+    border: 2px solid #EB6D20;
+    border-radius: 2.5rem;
+    text-align: center;
+}
+
+header > div > .help_btn > .button{
+    height: 3rem;
+    border: 2px solid #EB6D20;
+    color: white;
+    background-color: #EB6D20;
+    border: none;
+    cursor: pointer;
+}
+
+header > div > .help_btn{
+    height: 3rem;
+    width: 5.5rem;
+    margin-top: 1.75rem;
+    margin-left: 35%;
+    margin-right: 1.5%;
+}
+
+header > div > .help_btn, header > div > div > .text {
+    display: inline-block;
+}
+
+header .notification {
+    background-color: #EB6D20;
+    color: white;
+    border: 2.5px solid #EB6D20;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: 52%;
+    text-align: center;
+    width: 20%;
+}
+
+header > div > .search {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+header > div > .search > form {
+    height: auto;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 1.6875rem;
+    border: 4px solid white;
+    padding: 5px;
+    width: 92%;
+    margin-left: 3.875rem;
+}
+
+header > div > .search > form > input {
+    width: 95%;
+    height: 27.5px;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    position: inherit;
+}
+
+/*
+--------------------
+--------------------
+    CAT-CARD
+--------------------
+--------------------
+*/
+.cat-cards{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    flex-direction: row;
+    gap: 1.5rem;
+    height: 11.25rem;
+}
+
+.cat-cards > div{
+    width: 16.75rem;
+    position: relative;
+}
+
+/*
+--------------------
+--------------------
+    PROD-CARD
+--------------------
+--------------------
+*/
+
+.prod-cards{
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1.5rem;
+}
+
+.prod-cards > div{
+    margin: 0 auto;
+    width: 31.5%;
+    height: auto;
+    position: relative;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    margin-bottom: 4%;
+}
+
+.prod-cards > div > img{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: auto;
+}
+
+/*
+--------------------
+--------------------
+    NORM-CARD
+--------------------
+--------------------
+*/
+
+.norm-cards{
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    gap: 1.5rem;
+    overflow-x: hidden;
+}
+
+.norm-cards > div{
+    flex-direction: column-reverse;
+    height: auto;
+    width: 31.7%;
+}
+
+/*
+--------------------
+--------------------
+        TEXT
+--------------------
+--------------------
+*/
+
+.subheading{
+    margin-left: 1.5rem;
+}
+
+.description{
+    margin-left: 1.5rem;
+}
+
+
+/*
+--------------------
+--------------------
+     PROD-LIST
+--------------------
+--------------------
+*/
+.prod-list{
+    margin-left: 1.5rem;
+}
+
+
+/*
+--------------------
+--------------------
+     BTNS
+--------------------
+--------------------
+*/
+.left-btn-prod,.right-btn-prod{
+    display: none;
+}
+/*
+--------------------
+--------------------
+     PROD-CARD2
+--------------------
+--------------------
+*/
+.prod-cards2{
+    margin-left: 1.5rem;
+    width: 100%;
+}
+
+.prod-cards2 > div{
+    width: 12.95em;
+}
+
+/*
+--------------------
+--------------------
+     NAV2
+--------------------
+--------------------
+*/
+.nav2 {
+    display: flex;
+    gap: 29%;
+    margin-top: 48px;
+    justify-content: start;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    flex-wrap: wrap;
+}
+
+.nav2 > div{
+    margin-bottom: 2.5%;
+}
+
+.nav2 > .nav2-active > p{
+    color: #EB8426;
+}
+
+.nav2 > .nav2-active > hr{
+    border-color: #EB8426;
+}
+
+.nav2 > div > p{
+    color: var(--color-text-text, #3E3E3E);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10%;
+}
+
+/*
+--------------------
+--------------------
+     PROD-CARDS3
+--------------------
+--------------------
+*/
+.prod-cards3{
+    margin-left: 0;
+    justify-content:flex-start;
+    margin-top: 3rem;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.prod-cards3 > div{
+    margin-left: 1.5rem;
+    width: 29%;
+    gap: 1.5rem;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.prod-cards3 > .img > img{
+    width: 100%;
+}
+
+.prod-cards3 > div > img{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: auto;
+}
+
+.prod-cards3 > .prod_card7{
+    border-radius: 5px;
+    background: #D9ABFD;
+}
+
+/*
+--------------------
+--------------------
+     NEWSLETTER
+--------------------
+--------------------
+*/
+
+.newsletter {
+    border-radius: 5px;
+    background: #5959D9;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0px;
+    height: 16rem;
+    position: relative;
+    max-width: 56.25rem;
+}
+
+.newsletter > p {
+    margin-bottom: 1.5rem;
+    margin-left: 6.875rem;
+    margin-right: 13.6875rem;
+    color: white;
+}
+
+.newsletter > form{
+    width: 75%;
+    margin-top: 3rem;
+}
+
+.newsletter > .btn {
+    top: 65%;
+    right: 15%;
+    height: 14%;
+    width: 22%;
+}
+
+
+/*
+--------------------
+--------------------
+     FOOTER
+--------------------
+--------------------
+*/
+.foot-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.foot-container > div > .media > .logo, .foot-container > div > .media > p {
+    display: block;
+}
+
+.foot-container > .col1 {
+    text-align: left;
+    width: 15%;
+}
+
+.foot-container > .col2 {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+
+.foot-container  > .col2 > div >.info{
+    display: block;
+    text-align: left;
+    margin-bottom: .75rem;
+}
+
+.head {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    width: 5.5rem;
+    height: 3rem;
+    padding-left: 0;
+    font-weight: bold;
+}
+
+.foot-container > .col1 > .media {
+    background-color: white;
+    border-radius: 2rem;
+    width: 6.5rem;
+    height: 2.5rem;
+    text-align: left;
+}
+
+.foot-container > div > .media > img {
+    padding-top: 10px;
+    margin-left: 0;
+}
+
+.head-active{
+    background-color: white;
+    width: 5.5rem;
+    text-align: left;
+    height: 3rem;
+    padding-left: 0;
+    color: black;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.info-active{
+    margin-bottom: .75rem;
+    text-align: left;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+body .col2 > .active > hr{
+    display: none;
+}
+
+.down-btn{
+    display: none;
+}
+
+
+/*
+--------------------
+--------------------
+     FOOT2
+--------------------
+--------------------
+*/
+.foot2{
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.foot2 > .name{
+    text-align: left;
+}
+
+.foot2 > .name > p{
+    width: 119%;
+}
+
+.foot2 > .page-info{
+    text-align: left;
+    width: 60%;
+    display: inline;
+}
+
+.foot2 > .page-info > p{
+    text-align: center;
+    display: inline;
+}
+
+.foot2 > .page-info > .active{
+    padding: 5%;
+    text-align: center;
+    display: inline;
+    color: #EB8426;
+}
+
+.foot2 > .scroll{
+    text-align: right;
+    display: contents;
+}
+
+.up-arrow{
+    filter: invert(100%);
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+}
+
+
+
+/*For Desktop Views*/
+@media screen and (min-width: 901px) {
+    
+/*
+--------------------
+--------------------
+        DOT
+--------------------
+--------------------
+*/
+.dot-container{
+    display: none;
+}
+
+/*
+--------------------
+--------------------
+        NAV
+--------------------
+--------------------
+*/
+
+header > div{
+    max-width: 70%;
+    flex-wrap: wrap;
+}
+
+ header > div > div:nth-child(1), header > div > div:nth-child(2), header > div > div:nth-child(3), header > div > div:nth-child(4), header > div > div:nth-child(5){
+    order: 1;
+}
+
+header > div > .help_btn{
+    display: block;
+    margin-left: 35%;
+    margin-right: 1.5%;
+}
+
+header > div > .help_btn{
+    width: 5.5rem;
+    text-decoration: none;
+    background-color: #EB6D20;
+    border: 2px solid #EB6D20;
+    border-radius: 2.5rem;
+    text-align: center;
+    height: 3rem;
+    margin-top: 1.75rem;
+    MARGIN-LEFT: 5px;
+    margin-right: 1.5%;
+}
+
+header > div > .help_btn > .button{
+    height: 3rem;
+    border: 2px solid #EB6D20;
+    color: white;
+    background-color: #EB6D20;
+    cursor: pointer;
+}
+
+header > div > .help_btn, header > div > div > .text {
+    display: inline-block;
+}
+
+header .notification {
+    background-color: #EB6D20;
+    color: white;
+    border: 2.5px solid #EB6D20;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: 52%;
+    text-align: center;
+    width: 20%;
+}
+
+header > div > .search {
+    width: 55%;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+}
+
+header > div > .search > form > select{
+    width: 25%;
+    background: var(--base-gray-background, #F5F6F8);
+    height: 27.5px;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+header > div > .search > form {
+    height: auto;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 1.6875rem;
+    border: 4px solid white;
+    margin-left: 0px;
+    padding: 5px;
+    width: 100%;
+}
+
+header > div > .search > img {
+    display: none;
+}
+
+header > div > .search > form > input {
+    
+    width: 70%;
+    height: 27.5px;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    position: inherit;
+    padding-left: 5%;
+
+}
+
+.account{
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+.shop{
+    margin-left: 0;
+}
+
+nav{
+    margin: 0 auto;
+    top: 100px;
+    max-width: 73.5%;
+    margin-top: 28px;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    padding: 15px;
+}
+
+nav > ul > li{
+    display: inline-block;
+    list-style: none;
+    list-style-type: none;
+    margin: 0 5px 0px 5px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav > ul > li > .active{
+    color: #EB8426;
+}
+
+nav > ul > li > hr{ 
+    margin-left: 15px;
+    height: 5px;
+    margin-top: 0.75rem;
+    border-color: #EB8426;
+    width: 25%;
+    border-radius: 3.125rem;
+    background: var(--main-third, #EB8426);
+}
+
+nav > ul > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+/*
+--------------------
+--------------------
+    CAT-CARDS
+--------------------
+--------------------
+*/
+
+.cat-cards{
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+}
+
+.cat-cards > div{
+    width: 26.5rem;
+    height: 11.25rem;
+}
+
+/*
+--------------------
+--------------------
+    PROD-CARDS
+--------------------
+--------------------
+*/
+
+.prod-cards{
+    gap: 1.5rem;
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+    overflow-y: hidden;
+}
+
+.prod-cards > div{
+    width: 19rem;
+    height: 26.125rem;
+}
+
+/*
+--------------------
+--------------------
+    NORM-CARDS
+--------------------
+--------------------
+*/
+
+.norm-cards{
+    gap: 1.5rem;
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+    overflow-y: hidden;
+}
+
+.norm-cards > div{
+    flex-direction: row;
+    width: 26.5rem;
+    height: 10.875rem;
+}
+
+.norm-cards > div > div > img{
+    width: 7.5rem;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: -5rem;
+}
+
+.data >.heading{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 2.8rem;
+    margin-left: 1.5rem;
+    width: 9rem;
+    text-align: left;
+}
+
+.data >.text{
+    padding-right: 80px;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px;
+    margin-top: .5rem;
+    margin-left: 1.5rem;
+    width: 11rem;
+}
+
+/*
+--------------------
+--------------------
+    TEXT
+--------------------
+--------------------
+*/
+.subheading, .description{
+    margin-left: 18.75rem;
+}
+
+/*
+--------------------
+--------------------
+    BTN-S
+--------------------
+--------------------
+*/
+.left-btn{
+    display: block;
+    float: left;
+    background-color: #F5F6F8;
+    border-radius: 50%;
+    box-shadow: none;
+    margin-top: 5rem;
+    margin-left: 12.5rem;
+}
+
+.right-btn{
+    display: block;
+    float: right;
+    background-color: #F5F6F8;
+    border-radius: 50%;
+    box-shadow: none;
+    margin-top: 5rem;
+    margin-right: 12.5rem;
+}
+
+/*
+--------------------
+--------------------
+    PROD-LIST
+--------------------
+--------------------
+*/
+
+.prod-list{
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+}
+
+/*
+--------------------
+--------------------
+    PROD-CARD2
+--------------------
+--------------------
+*/
+
+.prod-cards2{
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+    gap: 1.5rem;
+    width: auto;
+    overflow-y: hidden;
+}
+
+.left-btn-prod{
+    display: block;
+    float: left;
+    background-color: #F5F6F8;
+    border-radius: 50%;
+    box-shadow: none;
+    margin-top: 9rem;
+    margin-left: 12.5rem;
+}
+
+.right-btn-prod{
+    display: block;
+    float: right;
+    background-color: #F5F6F8;
+    border-radius: 50%;
+    box-shadow: none;
+    margin-top: 9rem;
+    margin-right: 12.5rem;
+}
+
+/*
+--------------------
+--------------------
+        NAV2
+--------------------
+--------------------
+*/
+
+.nav2{
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+}
+
+
+/*
+--------------------
+--------------------
+    PROD-CARD3
+--------------------
+--------------------
+*/
+
+.prod-cards3{
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+}
+
+.prod-cards3 > div{
+    width: 19.5rem;
+    height: 27rem;
+}
+
+.prod-cards3 > .img > img{
+    width: 19.5rem;
+    height: 27rem;
+}
+
+.prod-cards3 > div> img{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+/*
+--------------------
+--------------------
+    NEWSLETTER
+--------------------
+--------------------
+*/
+
+.newsletter{
+    margin-top: 3rem;
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+    max-width: 75%;
+    height: 25rem;
+}
+
+.newsletter > form{
+    margin-top: 7%;
+    width: 70%;
+}
+
+.newsletter > .mail > .email{
+    width: 50%;
+}
+
+.newsletter > .btn{
+    width: 12rem;
+    top: 60%;
+    right: 16%;
+    height: 9.5%;
+}
+
+.newsletter > .btn > .right-arrow{
+    float: right;
+    position: absolute;
+    top: 2.5%;
+    right: 5%;
+    width: 2rem;
+}
+
+.newsletter > .btn > .button{
+    background-color: #EB8426;
+    color: white;
+    width: 10rem;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    padding-left: 0px;
+}
+
+.newsletter > .yes{
+    padding-top: 4%;
+}
+
+.newsletter > p{
+    margin-left: 10%;
+    width: 40%;
+}
+.newsletter > .label{
+    margin-left: 30%;
+    display: block;
+    color: var(--main-light, #D6D6D6);
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px; 
+    text-decoration-line: underline;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+/*
+--------------------
+--------------------
+     FOOTER
+--------------------
+--------------------
+*/
+.foot-container{
+    margin-left: 12%;
+    margin-right: 10%;
+    flex-direction: row;
+    width: 100%;
+}
+
+.foot-container > div > .media > .logo, .foot-container > div > .media > p {
+    display: block;
+}
+
+.foot-container > .col1 {
+    width: 15%;
+    margin-right: 0px;
+    margin-left: 5%;
+}
+
+.foot-container > .col2 {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+
+.foot-container  > .col2 > div >.info{
+    display: block;
+    text-align: left;
+    margin-bottom: .75rem;
+}
+
+.foot-container  > .col2 > div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.foot-container  > .col2 > .active{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.head {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    width: 5.5rem;
+    height: 3rem;
+    text-align: left;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+.foot-container > .col1 > .media {
+    display: inline;
+    background-color: white;
+    border-radius: 2rem;
+    width: 10.5rem;
+    height: 2.5rem;
+    text-align: left;
+}
+
+.foot-container > .col1 > .media > .logo {
+    margin-left: 0px;
+}
+
+.foot-container > div > .media > img {
+    padding-top: 10px;
+    margin-right: 1.5px;
+}
+
+.head-active{
+    background-color: white;
+    width: 5.5rem;
+    text-align: left;
+    height: 3rem;
+    padding-left: 0;
+    color: black;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.info-active{
+    margin-bottom: .75rem;
+    text-align: left;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+body .col2 > .active > hr{
+    display: none;
+}
+
+.down-btn{
+    display: none;
+}
+
+
+/*
+--------------------
+--------------------
+     FOOT2
+--------------------
+--------------------
+*/
+.foot2 > .page-info, .foot2 > .scroll{
+    display: block;
+}
+.foot2{
+    display: flex;
+    width: 78%;
+}
+
+.foot2 > .page-info{
+    display: flex;
+}
+
+.foot2 > .page-info > p{
+    margin-right: 5rem;
+}
+
+.foot2 > .scroll{
+    width: 10%;
+}
+
+.foot2 > .scroll > p{
+    display: contents;
+}
+
+.up-arrow{
+    display: block;
+    float: right;
+    filter: invert(100%);
+    transform: rotate(-90deg);
+    margin: 5px;
+}
+
+.foot2 > .page-info > .active{
+    color: #EB8426;
+}
+
+
+}
+
